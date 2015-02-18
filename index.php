@@ -10,31 +10,13 @@
         height: 300px;
       }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(33.789919, -117.850715),
-          zoom: 17,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+    
     
 </head>
 
 <body>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=894510517237655&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 
 
 <div id="container">
@@ -88,6 +70,26 @@
     <p> *parking lot available </p>
     </div>
     
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(33.789919, -117.850715),
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+		
+		var marker = new google.maps.Marker ({
+			position : new google.maps.LatLng(33.789919, -117.850715),
+			map : map
+			});
+		
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
     <div id="come_join">
     <img src="">
     </div>
@@ -97,5 +99,18 @@
     </div> <!--close home_content-->
     <?php include "includes/footer.php" ?>
 </div> <!--closing id container-->
+
+	<script>
+	(function(d, s, id) {
+  	var js, fjs = d.getElementsByTagName(s)[0];
+  	if (d.getElementById(id)) return;
+  	js = d.createElement(s); js.id = id;
+  	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=894510517237655&version=v2.0";
+  	fjs.parentNode.insertBefore(js, fjs);
+	}
+	(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
 </body>
 </html>
