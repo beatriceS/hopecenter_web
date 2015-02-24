@@ -4,11 +4,17 @@
 <meta charset="UTF-8">
 <title>Welcome to Hope Center of Christ</title>
 
-<style>
+	<style>
       #map-canvas {
         width: 300px;
         height: 300px;
-      }
+	  }
+    	
+		#map-canvas h3{
+			position: relative;
+			z-index: 100;
+			}
+	
     </style>
     
     
@@ -65,10 +71,10 @@
             <p> </p>
     </div>
     
-    <div id="map-canvas">
+    
+    
+    <div id="location">
     <h3> Location </h3>
-    <p> *parking lot available </p>
-    </div>
     
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
@@ -89,6 +95,10 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+    <div id="map-canvas">
+    </div>
+    <p> *parking lot available </p>
+    </div>
     
     <div id="come_join">
     <img src="">
