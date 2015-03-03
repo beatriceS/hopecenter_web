@@ -24,6 +24,7 @@
         <div id="meet_worship">
         <h2> Meet Our Worship Team </h2>
 			<div id="scott_debbie">
+            <img src="">
             <h3> Scott and Debbie Smith </h3>
 			<p> The Hope Center of Christ Worship Team is led by the talented and accomplished husband/wife team of Scott V. Smith and Debbie McClendon Smith.  It is their heart’s desire to share their love and joy for the Lord with others through their music and worship.<br><br>
 	Debbie McClendon Smith is a veteran gospel singer.  She leads the worship every Sunday, not just with her outstanding vocals, but also with Scriptures and introductions that teach and lead.<br><br>

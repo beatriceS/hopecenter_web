@@ -1,21 +1,38 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>HCOC: Events</title>
-    
-</head>
+<?php
+try
+{
+  $pdo = new PDO('mysql:host=localhost;dbname=hcoc_web', 'hcoc2015', 'password');
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $pdo->exec('SET NAMES "utf8"');
+}
+catch (PDOException $e)
+{
+  $error = 'Unable to connect to the database server.';
+  include 'includes/error.html.php';
+  exit();
+}
 
-<body>
-<div id="container">
-	<?php include "includes/header.php" ?>
-	<!--start home_content-->
-    <div id="events_content">
-    
-    
-    
-    </div> <!--close events_content-->
-    <?php include "includes/footer.php" ?>
-</div> <!--closing id container-->
-</body>
-</html>
+try
+{
+  $sql = 'SELECT * FROM events';
+  $result = $pdo->query($sql);
+}
+catch (PDOException $e)
+{
+  $error = 'Error fetching events: ' . $e->getMessage();
+  include 'includes/error.html.php';
+  exit();
+}
+
+while ($row = $result->fetch())
+{
+  $days[] = $row['day'];
+  $dates[] = $row['date'];
+  $months[] = $row['month'];
+  $titles[] = $row['title'];
+  $contents[] = $row['content'];
+  
+}
+
+include 'events.html.php';
+?>

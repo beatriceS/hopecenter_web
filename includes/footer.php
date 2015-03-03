@@ -22,6 +22,6 @@
 	</div>
     
     <div id="copyright">
-    <p> &copy; Copyright 2015 Hope Center of Christ </p>
+    <a href="admin/"><p> &copy; Copyright 2015 Hope Center of Christ </p></a>
     </div>
 </div> <!--closing id footer-->
