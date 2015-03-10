@@ -26,8 +26,15 @@
                 <p>
                     <?php echo $contents[$key]; ?>
                 </p>
+                <form action="?" method="post">
+                <input type="submit" name="action" value="Edit">
+                <input type="submit" name="action" value="Delete">
+                </form>
                 </div>
+            
+            
             <?php endforeach; ?>
+            
             
     </div> <!--close events_content-->
     <?php include "includes/footer.php" ?>
