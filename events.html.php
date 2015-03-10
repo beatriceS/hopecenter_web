@@ -11,21 +11,26 @@
 	<!--start home_content-->
     <div id="events_content">
 	<strong><p>Event Calendar</p></strong>
-    <?php foreach ($titles as $title): ?>
-      <blockquote>
+    
+    
+    <?php foreach ($titles as $key=>$value): ?>
+    	<div id="event_dates">
         <p>
-          <?php echo htmlspecialchars($title, ENT_QUOTES, 'UTF-8'); ?>
+            <?php echo $days[$key]; ?> <?php echo $months[$key]; ?> <?php echo $dates[$key]; ?>
         </p>
-      </blockquote>
-    <?php endforeach; ?>
+        </div>
+        <div id="event_contents">
+        <h4>
+			<?php echo htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); ?>
+        </h4>
+        <p>
+            <?php echo $contents[$key]; ?>
+        </p>
+        </div>
+	<?php endforeach; ?>
+    
     <!-- ------------------------------------------------------------------- -->
-    <?php foreach ($contents as $content): ?>
-      <blockquote>
-        <p>
-          <?php echo htmlspecialchars($content, ENT_QUOTES, 'UTF-8'); ?>
-        </p>
-      </blockquote>
-    <?php endforeach; ?>
+    
     </div> <!--close events_content-->
     <?php include "includes/footer.php" ?>
 </div> <!--closing id container-->

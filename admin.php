@@ -45,9 +45,16 @@ if (isset($_POST['content']))
   try
   {
     $sql = 'INSERT INTO events SET
-        content = :content,
-        date = CURDATE()';
+        month = :month,
+		date = :date,
+		day = :day,
+		title = :title,
+		content = :content';
     $s = $pdo->prepare($sql);
+	$s->bindValue(':month', $_POST['month']);
+	$s->bindValue(':date', $_POST['date']);
+	$s->bindValue(':day', $_POST['day']);
+	$s->bindValue(':title', $_POST['title']);
     $s->bindValue(':content', $_POST['content']);
     $s->execute();
   }
@@ -57,6 +64,46 @@ if (isset($_POST['content']))
     include 'includes/error.html.php';
     exit();
   }
+  
+  try
+  {
+    $sql = 'UPDATE events SET
+        month = :month,
+		date = :date,
+		day = :day,
+		title = :title,
+		content = :content,
+		WHERE id = :id';
+    $s = $pdo->prepare($sql);
+	$s->bindValue(':id', $_POST['id']);
+	$s->bindValue(':month', $_POST['month']);
+	$s->bindValue(':date', $_POST['date']);
+	$s->bindValue(':day', $_POST['day']);
+	$s->bindValue(':title', $_POST['title']);
+    $s->bindValue(':content', $_POST['content']);
+    $s->execute();
+  }
+  catch (PDOException $e)
+  {
+    $error = 'Error adding submitted event: ' . $e->getMessage();
+    include 'includes/error.html.php';
+    exit();
+  }
+  
+  try
+  {
+    $sql = 'DELETE FROM events WHERE id = :id';
+    $s = $pdo->prepare($sql);
+    $s->bindValue(':id', $_POST['id']);
+    $s->execute();
+  }
+  catch (PDOException $e)
+  {
+    $error = 'Error deleting event.';
+    include 'error.html.php';
+    exit();
+  }
+
 
   header('Location: .');
   exit();
@@ -64,7 +111,7 @@ if (isset($_POST['content']))
 
 try
 {
-  $sql = 'SELECT content FROM events';
+  $sql = 'SELECT * FROM events';
   $result = $pdo->query($sql);
 }
 catch (PDOException $e)
@@ -76,7 +123,11 @@ catch (PDOException $e)
 
 while ($row = $result->fetch())
 {
-  $jokes[] = $row['content'];
+  $days[] = $row['day'];
+  $dates[] = $row['date'];
+  $months[] = $row['month'];
+  $titles[] = $row['title'];
+  $contents[] = $row['content'];
 }
 
 include 'addevents.html.php';
