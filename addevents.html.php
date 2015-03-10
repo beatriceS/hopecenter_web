@@ -14,7 +14,7 @@
             <strong><p>Event Calendar</p></strong>
             
             <?php foreach ($titles as $key=>$value): ?>
-                <div id="event_dates">
+                <div id="event_calendars">
                 <p>
                     <?php echo $days[$key]; ?> <?php echo $months[$key]; ?> <?php echo $dates[$key]; ?>
                 </p>

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>HCOC: Events</title>
+<title>Upcoming Events</title>
 </head>
 
 <body>

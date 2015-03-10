@@ -22,16 +22,16 @@
         <img src="images/coleman.JPG">
         <h3> Sheila Schuller Coleman </h3>
         <h4> Senior Pastor </h4>
-        <p> Sheila is the Founding Pastor of Hope Center of Christ. Starting as a young girl she helped her father, Robert Harold Schuller behind the scenes as he was building an international ministry.  Her life has been dedicated to encouraging the discouraged, loving the forgotten, and teaching the secrets to an intimate and loving relationship with God, the Father, Jesus, the Son, and the Holy Spirit.<br><br>
-	Sheila counts as her greatest accomplishments her happy marriage, her four grown sons (a lawyer, a pastor, a detective, and an architect), beautiful daughter-in-laws and now adorable grandchildren.  In addition, she has edited several New York Times best selling manuscripts, as well as published children’s books and parenting books. She has an earned doctorate from University of Califonia Irvine in Educational Leadership.  She works part time as a tutor and volunteers full time for Hope Center of Christ. </p>
+        <p> Sheila is the Founding Pastor of Hope Center of Christ. Starting as a young girl she helped her father, Robert Harold Schuller behind the scenes as he was building an international ministry. Her life has been dedicated to encouraging the discouraged, loving the forgotten, and teaching the secrets to an intimate and loving relationship with God, the Father, Jesus, the Son, and the Holy Spirit.<br><br>
+	Sheila counts as her greatest accomplishments her happy marriage, her four grown sons (a lawyer, a pastor, a detective, and an architect), beautiful daughter-in-laws and now adorable grandchildren. In addition, she has edited several New York Times best selling manuscripts, as well as published children’s books and parenting books. She has an earned doctorate from University of Califonia Irvine in Educational Leadership. She works part time as a tutor and volunteers full time for Hope Center of Christ. </p>
         </div>
         
         <div id="pastors">
         <img src="images/shaw.JPG">
         <h3> Harold Shaw </h3>
         <h4> Pastor: Hope 2 Go Mission </h4>
-        <p> Harold was called to serve Jesus Christ while a volunteer at Crystal Cathedral Ministries.  Beginning as a Sunday School teacher, he currently serves as a volunteer teaching pastor at Hope Center of Christ, leading the weekly men’s Bible study, and also providing leadership to the community missions ministry at Hope Center of Christ.<br><br>
-	Harold is a graduate of the rigorous Robert Schuller Lay Pastoral Training program at the Crystal Cathedral Ministries.  “The most cherished event in my ministry and life is when Pastor Sheila Schuller Coleman and the Leadership Team invited me to be a part of the journey God has placed on their hearts.” </p>
+        <p> Harold was called to serve Jesus Christ while a volunteer at Crystal Cathedral Ministries. Beginning as a Sunday School teacher, he currently serves as a volunteer teaching pastor at Hope Center of Christ, leading the weekly men’s Bible study, and also providing leadership to the community missions ministry at Hope Center of Christ.<br><br>
+	Harold is a graduate of the rigorous Robert Schuller Lay Pastoral Training program at the Crystal Cathedral Ministries. “The most cherished event in my ministry and life is when Pastor Sheila Schuller Coleman and the Leadership Team invited me to be a part of the journey God has placed on their hearts.” </p>
         </div>
         
         <div id="pastors">

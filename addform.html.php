@@ -12,22 +12,22 @@
     <div id="addform_content">
         <form action="?" method="post">
       <div>
-      	<label for="days" class="label">Day: </label>
+      	<!--<label for="days" class="label">Day: </label>-->
       	<input name="days" type="text" class="required" id="days" title="Event's day.">
       </div>
       
       <div>
-      	<label for="months" class="label">Month: </label>
+      	<!--<label for="months" class="label">Month: </label>-->
       	<input name="months" type="text" class="required" id="months" title="Event's month.">
       </div>
       
       <div>
-      	<label for="dates" class="label">Date: </label>
+      	<!--<label for="dates" class="label">Date: </label>-->
       	<input name="dates" type="text" class="required" id="dates" title="Event's date.">
       </div>
       
       <div>
-      	<label for="titles" class="label">Title: </label>
+      	<!--<label for="titles" class="label">Title: </label>-->
       	<input name="titles" type="text" class="required" id="titles" title="Event's Title.">
       </div>
       
