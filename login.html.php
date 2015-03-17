@@ -26,6 +26,6 @@
         <input type="submit" value="Log in">
       </div>
     </form>
-    <p><a href="admin.php">Back</a></p>
+    <p><a href="event.php">Back</a></p>
   </body>
 </html>
