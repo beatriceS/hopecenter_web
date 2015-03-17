@@ -20,7 +20,7 @@ if (get_magic_quotes_gpc())
   }
   unset($process);
 }
-//LOG IN
+//LOG IN NOT WORKING
 if (!userIsLoggedIn())
 {
   include 'login.html.php';
