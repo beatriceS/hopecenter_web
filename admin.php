@@ -20,21 +20,7 @@ if (get_magic_quotes_gpc())
   }
   unset($process);
 }
-//LOG IN NOT WORKING
-if (!userIsLoggedIn())
-{
-  include 'login.html.php';
-  exit();
-}
 
-if (!userHasRole('Account Administrator'))
-{
-  $error = 'Only Account Administrators may access this page.';
-  include 'accessdenied.html.php';
-  exit();
-}
-
-//ADD EVENT
 if (isset($_GET['addevent']))
 {
   include 'addform.html.php';
@@ -54,8 +40,7 @@ catch (PDOException $e)
   exit();
 }
 
-
-if (isset($_POST['content']))
+if (isset($_POST['contents']))
 {
   try
   {
@@ -66,11 +51,11 @@ if (isset($_POST['content']))
 		title = :title,
 		content = :content';
     $s = $pdo->prepare($sql);
-	$s->bindValue(':month', $_POST['month']);
-	$s->bindValue(':date', $_POST['date']);
-	$s->bindValue(':day', $_POST['day']);
-	$s->bindValue(':title', $_POST['title']);
-    $s->bindValue(':content', $_POST['content']);
+	$s->bindValue(':month', $_POST['months']); // these should be plurals to match form posts
+	$s->bindValue(':date', $_POST['dates']);
+	$s->bindValue(':day', $_POST['days']);
+	$s->bindValue(':title', $_POST['titles']);
+    $s->bindValue(':content', $_POST['contents']);
     $s->execute();
   }
   catch (PDOException $e)
@@ -79,7 +64,7 @@ if (isset($_POST['content']))
     include 'includes/error.html.php';
     exit();
   }
-  
+  /*
   try
   {
     $sql = 'UPDATE events SET
@@ -104,7 +89,7 @@ if (isset($_POST['content']))
     include 'includes/error.html.php';
     exit();
   }
-  
+  */
   try
   {
     $sql = 'DELETE FROM events WHERE id = :id';
