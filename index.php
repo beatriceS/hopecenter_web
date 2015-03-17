@@ -5,23 +5,42 @@
 <title>Welcome to Hope Center of Christ</title>
 
 	<style>
-      #map-canvas {
+      	#map-canvas {
         width: 300px;
         height: 300px;
-	  }
+	  	}
     	
 		#map-canvas h3{
 			position: relative;
 			z-index: 100;
+		}
+		
+		#flex{
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+			
 			}
-	
+		
     </style>
     
+    <!-- SLIDER -->
+	<link rel="stylesheet" href="js/flexslider.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+
+	<!-- FLEXSLIDER -->
+	<script>
+ 	$(window).load(function() {
+    	$('.flexslider').flexslider();
+  	});
+	</script>
+	
     
 </head>
 
 <body>
-<div id="fb-root"></div>
+
 
 
 
@@ -37,19 +56,16 @@
 		<div class="flexslider">
             <ul class="slides">
                 <li>
-                    <a href="images/slider_04.jpg" rel="example_group" title=""> <img src="images/slider_01.jpg" alt="" /> </a>
+                    <img src="images/slider_01.jpg" alt="" />
                 </li>
                 <li>
-                    <a href="images/slider_01.jpg" rel="example_group" title=""> <img src="images/slider_02.jpg" alt="" /> </a>
+                    <img src="images/slider_02.jpg" alt="" />
                 </li>
                 <li>
-                    <a href="images/slider_02.jpg" rel="example_group" title=""> <img src="images/slider_03.jpg" alt="" /> </a>
+                    <img src="images/slider_03.jpg" alt="" />
                 </li>
                 <li>
-                    <a href="images/slider_03.jpg" rel="example_group" title=""> <img src="images/slider_04.jpg" alt="" /> </a>
-                </li>
-                <li>
-                    <a href="images/slider_05.jpg" rel="example_group" title=""> <img src="images/slider_05.jpg" alt="" /> </a>
+                    <img src="images/slider_04.jpg" alt="" />
                 </li>
   			</ul>
 		</div>
@@ -104,7 +120,9 @@
     <img src="">
     </div>
     
+    <div id="fb-root">
     <div class="fb-like-box" data-href="https://www.facebook.com/HopeCenterOc?ref=br_tf" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="true"></div>
+    </div>
     
     </div> <!--close home_content-->
     <?php include "includes/footer.php" ?>
