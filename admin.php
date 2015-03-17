@@ -20,7 +20,21 @@ if (get_magic_quotes_gpc())
   }
   unset($process);
 }
+//LOG IN
+if (!userIsLoggedIn())
+{
+  include 'login.html.php';
+  exit();
+}
 
+if (!userHasRole('Account Administrator'))
+{
+  $error = 'Only Account Administrators may access this page.';
+  include 'accessdenied.html.php';
+  exit();
+}
+
+//ADD EVENT
 if (isset($_GET['addevent']))
 {
   include 'addform.html.php';
@@ -39,6 +53,7 @@ catch (PDOException $e)
   include 'includes/error.html.php';
   exit();
 }
+
 
 if (isset($_POST['content']))
 {
