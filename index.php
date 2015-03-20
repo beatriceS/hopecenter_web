@@ -120,9 +120,7 @@
     <img src="">
     </div>
     
-    <div id="fb-root">
-    <div class="fb-like-box" data-href="https://www.facebook.com/HopeCenterOc?ref=br_tf" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="true"></div>
-    </div>
+    <div class="fb-post" data-href="https://www.facebook.com/FacebookDevelopers/posts/10151471074398553" data-width="420"></div>
     
     </div> <!--close home_content-->
     <?php include "includes/footer.php" ?>

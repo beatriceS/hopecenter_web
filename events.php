@@ -1,7 +1,7 @@
 <?php
 try
 {
-  $pdo = new PDO('mysql:host=localhost;dbname=hcoc_web', 'hcoc2015', 'password');
+  $pdo = new PDO('mysql:host=localhost;dbname=hcoc_web', 'creative', 'root');
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $pdo->exec('SET NAMES "utf8"');
 }
@@ -14,7 +14,7 @@ catch (PDOException $e)
 
 try
 {
-  $sql = 'SELECT * FROM events';
+  $sql = 'SELECT * FROM events ORDER BY 1 DESC LIMIT 5';
   $result = $pdo->query($sql);
 }
 catch (PDOException $e)
