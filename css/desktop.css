@@ -1,0 +1,486 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*----------------------*/
+/*------- HEADER -------*/
+/*----------------------*/
+
+body{
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+/*
+p, h1, h2, h3, h4, h5, h6, a{
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Lobster Two', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Droid Serif', serif;
+	}
+*/
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Roboto', sans-serif;
+	}
+
+p{
+	font-family: 'Droid Serif', serif;
+	}
+
+a{
+	font-family: 'Montserrat', sans-serif;
+	font-variant: small-caps;
+	}
+
+#container{
+	min-width: 1013px;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+#header{
+	width: 100%;
+	}
+
+#logo_background{
+	background-color: #F93;
+	width: 100%;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	margin-bottom: 0;
+	}
+
+#logo{
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+	}
+
+#logo img{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+#tagline{
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+#tagline p{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+	}
+
+#nav_background{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FC6;
+	margin-top: -25px;
+	margin-bottom: 30px;
+	}
+
+#nav{
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+#nav ul{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
+#nav li{
+	width: 100%;
+	display: inline;
+	padding-right: 2.6%;
+	padding-left: 2.6%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+#nav a{
+	font-size: 135%;
+	text-decoration: none;
+	}
+
+/*----------------------*/
+/*------- FOOTER -------*/
+/*----------------------*/
+
+#footer{
+	width: 100%;
+	background-color: rgba(255,153,0,0.5);
+	opacity: 50%;
+	margin-top: 20px;
+	}
+
+#footer_info{
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 55%;
+	float: left;
+	margin-left: 5%;
+	}
+	
+#footer_info h2{
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 1.6em;
+	border-bottom: 1.5px;
+	border-style: solid;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	}
+
+#footer_info h4{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 1.3em;
+	}
+
+#footer_info p{
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+	}
+
+#footer_info h6{
+	font-size: 0.8em;
+	}
+
+#info_add{
+	float: left;
+	width: 50%;
+	}
+
+#info_schedule{
+	float: left;
+	width: 50%;
+	}
+
+#location{
+	width: 25%;
+	float: left;
+	padding-top: 20px;
+	margin-left: 10%;
+	}
+
+#map-canvas {
+	width: 100%;
+	height: 200px;
+	}
+
+#copyright{
+	width: 100%;
+	background-color: orange;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	}
+
+/*----------------------------*/
+/*------- HOME CONTENT -------*/
+/*----------------------------*/
+#home_content{
+	width: 100%;
+	}
+
+#flex{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	}
+
+.flexslider{
+	margin: 10px;
+	}
+
+#index_content{
+	width: 100%;
+	}
+
+#index_content h3{
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	font-variant: small-caps;
+	}
+/*----------------------------*/
+#index_left{
+	width: 70%;
+	float: left;
+	}
+
+#current_series{
+	width: 40%;
+	float: left;
+	padding-right: 5%;
+	}
+
+#current_series img{
+	width: 100%;
+	}
+
+#latest_video{
+	width: 50%;
+	float: left;
+	}
+
+#youtube_video iframe{
+	width: 100%;
+	height: 250px;
+	}
+
+#news_signup{
+	width: 95%;
+	margin-top: 20px;
+	}
+
+#news_signup img{
+	width: 100%;
+	}
+/*----------------------------*/
+#index_right{
+	width: 30%;
+	float: left;
+	}
+
+#fb-root{
+	width: 50%;
+	}
+
+/*-----------------------------*/
+/*------- ABOUT CONTENT -------*/
+/*-----------------------------*/
+#about_content h2{
+	font-family: 'Lobster Two', cursive;
+	text-align: center;
+	font-size: 3em;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	}
+
+#background_heading{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/header.png);
+	background-repeat: no-repeat;
+	}
+
+#meet_pastors{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	}
+
+#pastors{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	}
+
+#pastors h3{
+	text-transform: uppercase;
+	font-size: 1.2em;
+	margin-bottom: 15px;
+	font-weight: bold;
+	}
+
+#pastors p{
+	line-height: 150%;
+	}
+
+#pastors_left{
+	width: 20%;
+	float: left;
+	}
+
+#pastors_left img{
+	width: 100%;
+	}
+
+#pastors_right{
+	width: 75%;
+	float: right;
+	}
+
+/*-----------------------------*/
+/*------- EVENT CONTENT -------*/
+/*-----------------------------*/
+
+.events_data{
+	overflow: hidden;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	}
+
+.event_dates{
+	width: 10%;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+	clear: left;
+	}
+
+.event_dates p{
+	font-family: 'Montserrat', sans-serif;
+	}
+
+.months{
+	background-color: orange;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	}
+
+.dates{
+	background-color: rgba(255,102,0,0.2);
+	font-size: 2.5em;
+	padding-top: 10px;
+	}
+
+.days{
+	background-color: rgba(255,102,0,0.2);
+	padding-top: 10px;
+	padding-bottom: 5px;
+	}
+
+.event_contents{
+	width: calc(90% - 2em);
+	padding-left: 2em;
+	float: left;
+	}
+
+.event_contents h4{
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+	}
+
+.event_contents p{
+	font-family: 'Roboto', sans-serif;
+	line-height: 150%;
+	}
+
+/*-----------------------------*/
+/*------- MEDIA CONTENT -------*/
+/*-----------------------------*/
+
+.video_sunday{
+	width: 32%;
+	border: medium;
+	border-style: groove;
+	margin-top: 15px;
+	}
+
+.video_sunday img{
+	float: left;
+	width: 100%;
+	}
+
+.media_info{
+	float: right;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	}
+
+.media_info h4{
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 1.2em;
+	}
+
+#row1, #row2, #row3 {
+	float: left;
+	}
+
+#row1, #row2{
+	margin-right: 1%;
+	}
+
+.answer_ver2{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	}
+
+/*----------------------------------*/
+/*------- MINISTRIES CONTENT -------*/
+/*----------------------------------*/
+#ministries_content{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	}
+
+#hope2go{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+#hope2go p{
+	font-size: 1.1em;
+	line-height: 20px;
+	}
+
+#hope_images{
+	width: 90%;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+#hope_images img{
+	margin: 1%;
+	width: 17%;
+	}
+
+#hope_images ul{
+	margin-right: auto;
+	margin-left: auto;
+	}
+	
+#hope_images li{
+	display: inline;
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+
+/*-----------------------------*/
+/*------- GIVE CONTENT -------*/
+/*-----------------------------*/
+
+
+
+
+/*-----------------------------*/
+/*------- CONTACT CONTENT -------*/
+/*-----------------------------*/

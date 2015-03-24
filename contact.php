@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>HCOC: Contact Us</title>
-    
+	<?php include "includes/fonts.php" ?>
+    <?php include "includes/stylesheet.php" ?>
 </head>
 
 <body>

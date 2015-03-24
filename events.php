@@ -14,7 +14,7 @@ catch (PDOException $e)
 
 try
 {
-  $sql = 'SELECT * FROM events';
+  $sql = 'SELECT * FROM events ORDER BY id DESC LIMIT 10 ';
   $result = $pdo->query($sql);
 }
 catch (PDOException $e)
