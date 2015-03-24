@@ -111,7 +111,7 @@ if (isset($_POST['contents']))
 
 try
 {
-  $sql = 'SELECT * FROM events';
+  $sql = 'SELECT * FROM events ORDER BY id DESC';
   $result = $pdo->query($sql);
 }
 catch (PDOException $e)

@@ -3,43 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <title>HCOC: Ministries</title>
-    
+	<?php include "includes/fonts.php" ?>
+    <?php include "includes/stylesheet.php" ?>
 </head>
 
 <body>
 <div id="container">
 	<?php include "includes/header.php" ?>
 	<!--start home_content-->
+    <div id="about_content">
+    
+    <div id="background_heading">
+    <h2> Hope 2 Go Mission </h2>
+    </div>
+    
     <div id="ministries_content">
     
-    <div id="childrens">
-    <h3> Children's Ministries </h3>
-    </div>
-    
-    <div id="hope2go">
-    <h3> Hope 2 Go Mission </h3>
-    </div>
-    
-    <div id="bible_studies">
-    <h3> Bible Studies </h3>
-    <p> Building a firm Biblical foundation is important at Hope Center of Christ.  In addition to the solid Bible teaching on Sunday mornings, there are mid-week Bible studies where you can engage in the scripture as well as get into a prayer community </p>
-    	<div id="women">
-        <h4> Women's of Hope </h4>
-        <p> A Bible Study and prayer community of women meets every Tuesday night at 7 pm in the home of Joe and Wendy Kahapea: 274 E. Sherman Ave., Orange. </p>
+        <div id="hope2go">
+        <p> A core value of Hope Center of Christ is to bring hope to the hopeless in our community through our words and our works.  Our call is to the forgotten and the hopeless of Central Orange County.  We believe that there are many who, for a variety of reasons, aren’t able to come to hope.  As a result, we are committed to bringing hope to them, to demonstrate to them in a tangible way that God has not forgotten them.  We are privileged to partner with Orange County Rescue Mission’s Chili Van.  The third Saturday of every other month we bring hope via the the chili van to motel families in Orange County.<br><br>
+	It is our fervent desire to continue to finding needs in our community and filling them in the days and years to come. </p>
         </div>
-        
-        <div id="men">
-        <h4> Band of Brothers </h4>
-        <p> A Bible Study and prayer community of men meets every Tuesday night at 7 pm at the home of Paul and Debbie Lips: 819 Elmwood Ave., Orange. </p>
+       	
+        <div id="hope_images">
+        <ul>
+        	<li> <img src="images/mission_01.png"> </li>
+            <li> <img src="images/mission_02.png"> </li>
+            <li> <img src="images/mission_03.png"> </li>
+            <li> <img src="images/mission_04.png"> </li>
+            <li> <img src="images/mission_05.png"> </li>
+            <li> <img src="images/mission_06.png"> </li>
+            <li> <img src="images/mission_07.png"> </li>
+            <li> <img src="images/mission_08.png"> </li>
+            <li> <img src="images/mission_09.png"> </li>
+            <li> <img src="images/mission_10.png"> </li>
+        </ul>
         </div>
-        
-        <div id="young">
-        <h4> Hope Seekers </h4>
-        <p> A Bible Study for young adults who are searching to learn how to be a Christian in a secular world.  Meets every other Saturday at the home of Christine Thomas. </p>
-        </div>
-    </div>
     
-    </div> <!--close ministries_content-->
+    </div> <!--close ministry_content-->
+    </div> <!--close about_content-->
     <?php include "includes/footer.php" ?>
 </div> <!--closing id container-->
 </body>
